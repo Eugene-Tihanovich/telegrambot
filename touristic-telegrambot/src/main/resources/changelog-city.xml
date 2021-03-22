@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1" author="tihanovich">
+        <sql>
+            create database if not exists cities;
+        </sql>
+    </changeSet>
+
+    <changeSet id="2" author="tihanovich">
+        <sql>
+            create table if not exists city (
+            id bigint not null primary key auto_increment,
+            info varchar(200) not null,
+            name varchar(50) not null
+            );
+        </sql>
+    </changeSet>
+
+    <changeSet id="3" author="tihanovich">
+        <sql>
+            insert into city(info, name) values('Advise you to go to The Opera and Ballet Theatre. Believe me, you will like it.', 'Minsk');
+            insert into city(info, name) values('Do not forget to visit Red Square. But you do not have to go to TSUM)))', 'Moscow');
+            insert into city(info, name) values('You must see the Motherland. The height of the monument reaches 102 meters, weight - 450 tons.', 'Kiev');
+            insert into city(info, name) values('Walk through the old town and visit Copernicus Science Center. This place is not only popular for children)))', 'Warsaw');
+            insert into city(info, name) values('Visit the Gediminas Tower and then taste the national cuisine. After such a walk, you will definitely want to eat.', 'Vilnius');
+            insert into city(info, name) values('There are always a lot of tourists around Manneken Pis. Remember this. Also know that Brussels has the tastiest fries.', 'Brussels');
+            insert into city(info, name) values('Amsterdam is a city of sins. Go to Casa Rosso theater. Believe me, there is something to see)))', 'Amsterdam');
+            insert into city(info, name) values('One day is not enough to see all the sights in Rome. However, I advise you to start your journey in Colosseum.', 'Rome');
+            insert into city(info, name) values('Hope you are in excellent health. The local beer is delicious. In Prague bar-hopping is like a journey.', 'Prague');
+            insert into city(info, name) values('Visit the Reichstag, have a beer, enjoy the local cuisine. Eh, take me with you)))', 'Berlin');
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
