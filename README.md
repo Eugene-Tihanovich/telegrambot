@@ -3,8 +3,8 @@ To run the application, you need:
 1. download/сlone it to your computer
 2. open it in IntelliJ IDEA
 3. set bot name (BOT_NAME) and token (BOT_TOKEN) to environment variables
-BOT_NAME = pony_marmeladka_bot
-BOT_TOKEN = 1753410733:AAHDcslLGP36gMPAnyfVeeqyd7rpFW2-0Kk
+BOT_NAME = pony_marmeladka_bot  
+BOT_TOKEN = 1753410733:AAHDcslLGP36gMPAnyfVeeqyd7rpFW2-0Kk  
 4. click «Run TouristicTelegrambotApplication»
 5. find pony_marmeladka_bot in telegram and run it
 6. write Minsk and see what happens
